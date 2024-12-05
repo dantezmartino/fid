@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+body {
+    background-color: #024950;
+    margin: 0 10%;
+    font-family: sans-serif;
+    background: url("images/white-waves.png");
+    
+    }
+  .permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .caudex-regular {
+    font-family: "Caudex", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .caudex-bold {
+    font-family: "Caudex", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .caudex-regular-italic {
+    font-family: "Caudex", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .caudex-bold-italic {
+    font-family: "Caudex", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  li {
+    color: #ffffff;
+}
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  font-family: "Caudex", serif;
+  font-weight: 700;
+  font-style: normal;
+  border-bottom: 1px solid #57b1dc;
+  margin-top: 30px;
+  color: #ffffff;
+}
+h2 {
+  color: #ffffff;
+  font-size: 1.07em;
+  font-family: "Caudex", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 1.07em;
+    text-align: center;
+    font-family: "Caudex", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+footer4 img  {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+footer {
+    text-align: center;
+    font-size: 1em;
+  }
+

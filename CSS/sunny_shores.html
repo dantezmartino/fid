@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sunny Shores Getaways - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="menustyle.css">
+</head>
+<body>
+
+
+<div class="navbar">
+  <img align="left" src="images/logo1.jpg" alt="Sunny Shores Logo" width="95">
+  <a href="sunny_shores.html">Home</a>
+  <a href="contact.html">Contact</a>
+  <a href="destinations.html">Destinations</a>
+  <a href="package.html">Packages</a>
+  <a href="./about.html">About Us</a>
+  <a href="./faqs.html">FAQs</a>
+</div>
+<br>
+<br>
+<br>
+<img align="left" src="images/beach1.jpg" alt="Tropical Paradise" width="400" height="300">
+
+<div id="box">
+<h2 style="margin-left: 450px;">Your Dream Vacation Awaits</h2>
+<p style="margin-left: 450px;">At Sunny Shores Getaways, we specialize in creating unforgettable beach vacations. Whether you're looking for adventure or relaxation, our team is here to make it happen. Escape to paradise with our exclusive destinations and unbeatable packages!</p>
+</div>
+
+<div class="slider-container">
+    <div class="slider-images" id="slider">
+        <img src="images/beach5.jpg" alt="Image 1">
+        <img src="images/beach2.jpg" alt="Image 2">
+        <img src="images/couple.png" alt="Image 3">
+        <img src="images/beach3.jpg" alt="Image 4">
+    </div>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+
+<script>
+    let currentSlide = 0;
+
+    function changeSlide(direction) {
+        const slider = document.getElementById('slider');
+        const slides = slider.children;
+        const totalSlides = slides.length;
+
+       
+        currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+
+        
+        slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    
+    setInterval(() => {
+        changeSlide(1);
+    }, 3000);
+</script>
+
+
+
+<div align="center">
+  <h2>Trusted Partners</h2>
+  <p>We collaborate with leading resorts and airlines to ensure a seamless vacation experience:</p>
+  <div class="grow">
+    <a href="https://www.marriott.com/"><img src="images/marriott.png" alt="Marriott Hotels" width="360" height="100"></a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="https://www.united.com/"><img src="images/united-airlines.png" alt="United Airlines" width="360" height="83"></a>
+    &nbsp;&nbsp;&nbsp;
+    <a href="https://www.sandals.com/"><img src="images/sandals-resorts.png" alt="Sandals Resorts" width="360" height="170"></a>
+  </div>
+</div>
+<br>
+<br>
+<div align="center">
+  <h2>Ready to Plan?</h2>
+  <p>Contact us <a href="contact.html">here</a> to start planning your dream getaway, or explore our vacation packages <a href="package.html">here</a>.</p>
+</div>
+<br>
+<h3> </h3>
+</body>
+
+<div align="center">
+<footer><p>&copy; 2024 Sunny Shores Getaways | Designed by Elijah</p></footer>
+</div>
+
+</html>
